@@ -1,0 +1,226 @@
+{
+  "title": "Les 12 Déclencheurs de Contenu Viral",
+  "author": "Loïc Bourget",
+  "intro": {
+    "promise": "Ces 12 déclencheurs ne sont pas des \"astuces de créateur\". Ce sont des mécanismes psychologiques documentés — ceux qui décident, dans les premières secondes, si ton contenu passe ou s'arrête. Chaque déclencheur a un nom, une logique cognitive précise, et une façon de l'appliquer cette semaine. Pas de théorie vague. Pas de \"crée du contenu de valeur\". Des leviers que le cerveau humain ne peut pas ignorer.",
+    "how_to_use": "Ce guide est structuré en 12 fiches. Chaque fiche te donne : le principe (comment je l'utilise), pourquoi ça marche neurologiquement, la loi à retenir, et 2 à 3 actions concrètes à tester dans tes prochaines vidéos. Pour chaque déclencheur, j'ai sélectionné un de mes reels comme exemple réel — regarde-le avant de lire les actions. C'est en voyant le mécanisme en action que tu commences à le reconnaître — et à le maîtriser."
+  },
+  "triggers": [
+    {
+      "n": 1,
+      "name": "Ultra Clivant / Prise de Position Forte",
+      "principe": "Tu prends une position qui divise immédiatement. Les gens ne peuvent pas rester neutres. L'objectif : créer des camps et déclencher le débat.",
+      "pourquoi": "C'est le principe de dissonance cognitive de Festinger appliqué au feed. Quand tu affirmes quelque chose qui contredit la croyance d'une partie de ton audience, leur cerveau entre en état d'alerte — ils doivent répondre pour résoudre la tension. Ce n'est pas de la curiosité : c'est une réactance. Les gens ne scrollent pas, ils défendent leur position. En parallèle, ceux qui sont d'accord avec toi partagent — parce que ton post devient leur porte-parole. Résultat : deux camps, deux flux de commentaires, une portée qui explose. Les algorithmes de toutes les plateformes mesurent le temps passé sur le contenu et les interactions. Un contenu clivant génère les deux simultanément.",
+      "punchline": "Plus tu prends position, plus on te répond. La neutralité ne devient jamais virale.",
+      "appliquer": [
+        "Prends la conviction la plus radicale que tu as sur ton domaine — celle que tu n'oserais pas dire en réunion — et construis un reel entier autour d'elle. Pas de nuance dans les deux premières secondes. La nuance arrive après, si elle arrive.",
+        "Reformule une \"vérité acceptée\" de ton secteur comme si c'était un mensonge. \"La cohérence, c'est surestimé.\" \"Poster tous les jours ne sert à rien si personne ne te croit.\" L'attaque d'un consensus fort crée immédiatement deux camps.",
+        "Lis les commentaires de tes derniers posts. Trouve le sujet sur lequel les gens ne sont pas d'accord entre eux — c'est là que se cache ton prochain contenu clivant."
+      ],
+      "reel_url": "https://www.instagram.com/reel/DUBcvSGiDpx/",
+      "video": "assets/reels/reel1.mp4",
+      "thumb": "assets/thumbs/reel1.jpg",
+      "duration": 44
+    },
+    {
+      "n": 2,
+      "name": "Geste Visuel Fort / Mouvement Accrocheur",
+      "principe": "Un mouvement physique capte l'œil et empêche le scroll. Marcher, couper, montrer, jeter, pointer — peu importe le geste. Ce qui compte, c'est que quelque chose bouge dans les premières secondes.",
+      "pourquoi": "Le cerveau humain est câblé pour détecter le mouvement avant tout autre stimulus visuel. C'est le réflexe d'orientation hérité de l'évolution : tout ce qui bouge dans le champ visuel mérite une vérification immédiate. Sur un feed vertical où chaque vignette est statique, un geste dans les premières frames déclenche ce réflexe automatiquement — sans que le spectateur ait eu le temps de décider consciemment de regarder. L'algorithme, lui, appelle ça du taux de rétention. Les deux vont dans le même sens.",
+      "punchline": "Le cerveau suit le mouvement avant d'écouter le message.",
+      "appliquer": [
+        "Au lieu de commencer face caméra en plan fixe, marche vers l'objectif tout en parlant. La caméra qui se rapproche de ton visage — ou l'inverse — crée une tension visuelle immédiate.",
+        "Utilise les mains pour montrer quelque chose hors-champ dans la première seconde. \"Regarde ce truc\" avec un doigt qui pointe crée une curiosité spatiale : le spectateur veut voir ce que tu montres.",
+        "Coupe au montage entre deux plans radicalement différents en termes d'angle ou de distance dans les 3 premières secondes. Même sans musique, le changement de plan capte."
+      ],
+      "reel_url": "https://www.instagram.com/reel/DSnXaSPCPdR/",
+      "video": "assets/reels/reel2.mp4",
+      "thumb": "assets/thumbs/reel2.jpg",
+      "duration": 21
+    },
+    {
+      "n": 3,
+      "name": "Transition Surprenante",
+      "principe": "Une rupture brutale de plan, de décor ou d'ambiance force le spectateur à rester pour comprendre ce qu'il se passe. La continuité narrative est cassée — le cerveau doit reconstruire.",
+      "pourquoi": "L'effet Zeigarnik décrit le phénomène suivant : le cerveau retient mieux les tâches interrompues que les tâches terminées. Une transition abrupte crée une interruption narrative — une boucle ouverte que le spectateur veut fermer. Il reste pour comprendre la logique du montage, pour voir si le décor et le message vont se rejoindre. C'est différent du simple \"jump cut\" : ici, la rupture est assez forte pour créer une question (\"Pourquoi est-il maintenant ici ?\") qui ne se résout qu'en continuant à regarder.",
+      "punchline": "Si la vidéo change, l'attention reste.",
+      "appliquer": [
+        "Tourne deux parties de ton reel dans deux décors radicalement différents — intérieur/extérieur, debout/assis, clair/sombre. Coupe sans transition douce. L'effet de rupture fait le travail.",
+        "Change de tenue entre deux moments du reel et ne l'explique pas. L'incongruité visuelle non résolue retient l'attention plus longtemps qu'une explication logique.",
+        "Commence dans un décor bruyant et coupe vers un silence total — ou l'inverse. Le contraste sonore combiné au contraste visuel crée une rupture de réalité que l'audience ne s'attendait pas."
+      ],
+      "reel_url": "https://www.instagram.com/reel/DPjhLgyCG6w/",
+      "video": "assets/reels/reel3.mp4",
+      "thumb": "assets/thumbs/reel3.jpg",
+      "duration": 69
+    },
+    {
+      "n": 4,
+      "name": "Clivage Social (Nous vs Eux)",
+      "principe": "Tu forces le public à se positionner dans un camp. Pas sur un sujet abstrait — sur leur identité. \"Ceux qui réussissent font ça. Les autres font ça.\" Il n'y a pas de milieu.",
+      "pourquoi": "C'est le biais d'appartenance au groupe — ou in-group/out-group bias — en pleine action. Quand une personne sent que son identité est categorisée dans un camp, elle réagit pour défendre ou revendiquer son appartenance. Ça ne se choisit pas : c'est un mécanisme de protection de l'estime de soi documenté par Henri Tajfel dès les années 70. Sur les réseaux, ça se traduit directement par des commentaires. Ceux qui se reconnaissent dans le \"camp gagnant\" valident. Ceux qui sont dans le camp perdant protestent — ou pire, reconnaissent la vérité et partagent. Le clivage social génère des commentaires longs, émotionnels, et souvent des threads entiers entre spectateurs. Ce sont exactement les signaux que les algorithmes amplifient.",
+      "punchline": "Les gens commentent pour défendre leur identité.",
+      "appliquer": [
+        "Formule ton hook comme une ligne de partage des eaux : \"Les gens qui [résultat que tout le monde veut] font X. Ceux qui [résultat que personne ne veut] font Y.\" Ne nuance pas dans le hook — la nuance peut venir après, dans le corps.",
+        "Cible un comportement que beaucoup pratiquent en croyant bien faire — et montre pourquoi c'est ce qui les bloque. Le \"vous faites tous cette erreur\" crée de la friction productive : ceux qui ne font pas l'erreur partagent pour marquer leur différence.",
+        "Utilise des métaphores de camp identitaire fort de ta niche : \"les créateurs qui durent\" vs \"ceux qui abandonnent après 3 mois\", \"ceux qui vendent\" vs \"ceux qui produisent sans retour\". Plus le camp est désirable, plus les gens veulent s'y identifier explicitement en commentaire."
+      ],
+      "reel_url": "https://www.instagram.com/reel/DDaAGBmoIAD/",
+      "video": "assets/reels/reel4.mp4",
+      "thumb": "assets/thumbs/reel4.jpg",
+      "duration": 56
+    },
+    {
+      "n": 5,
+      "name": "Suspense / Tension Dramatique",
+      "principe": "Tu laisses croire qu'un problème grave arrive — puis tu retournes la situation. La mécanique : peur, puis curiosité, puis révélation. Le spectateur ne peut pas partir avant de savoir comment ça se termine.",
+      "pourquoi": "Le suspense repose sur deux mécanismes combinés. D'abord, l'effet Zeigarnik : une boucle narrative ouverte génère une tension cognitive que le cerveau cherche à résoudre. Ensuite, le biais de négativité : une menace perçue capte plus d'attention qu'une promesse équivalente. Si les premières secondes de ton reel signalent un danger, une perte, ou une situation grave, le cerveau active son système d'alerte — et reste. Le twist final récompense ce temps de présence avec une libération émotionnelle — soulagement, surprise, satisfaction — qui déclenche le partage. On partage ce qui nous a fait vivre une montagne russe émotionnelle.",
+      "punchline": "La tension retient, le twist fait partager.",
+      "appliquer": [
+        "Commence ton reel par une phrase qui annonce une catastrophe ou une erreur grave : \"J'ai failli tout perdre à cause de ça.\" ou \"Ce que j'ai fait m'a coûté des mois.\" Ne révèle pas le twist avant la moitié du reel.",
+        "Structure ton contenu en 3 temps explicites : le problème (montré, pas résumé), le moment de basculement (la prise de conscience ou l'action), et la révélation (ce que ça a changé). Chaque temps doit être assez court pour créer de l'impatience.",
+        "Au montage, ajoute une pause ou un silence juste avant la révélation. Ce blanc dure 1 à 2 secondes maximum — mais il simule la tension théâtrale du \"et alors ?\" qui retient jusqu'au bout."
+      ],
+      "reel_url": "https://www.instagram.com/reel/DAVgMNXTdFJ/",
+      "video": "assets/reels/reel5.mp4",
+      "thumb": "assets/thumbs/reel5.jpg",
+      "duration": 21
+    },
+    {
+      "n": 6,
+      "name": "Fake Événement / Rupture de Réalité",
+      "principe": "Tu mets en scène une situation \"officielle\" ou choquante — quelque chose qui ne devrait pas se passer dans une vidéo normale. Les gens se demandent : c'est vrai ou pas ?",
+      "pourquoi": "Le doute est l'un des états cognitifs les plus difficiles à interrompre. Quand le cerveau ne sait pas si ce qu'il regarde est réel, il ne peut pas décider de partir — parce que partir, c'est renoncer à la résolution. C'est le curiosity gap : l'écart entre ce qu'on sait et ce qu'on veut savoir crée une tension que seule la fin du contenu peut résoudre. L'ambiguïté — ni clairement réel, ni clairement fictif — est précisément ce qui maintient cette tension le plus longtemps. Les commentaires du type \"c'est vrai ??\" ou \"attends c'est quoi ce truc\" sont exactement ceux qui font exploser la portée organique.",
+      "punchline": "Le doute alimente les commentaires.",
+      "appliquer": [
+        "Simule un écran de notification, un email reçu, ou un message entrant — et filme ta réaction en temps réel avant d'expliquer ce que c'est. La mise en scène de la découverte crée le sentiment d'assister à quelque chose d'authentique.",
+        "Construis un hook qui semble annoncer un événement impossible ou improbable — et joue-le complètement droit, sans signaler que c'est une mise en scène. Laisse le titre ou la première phrase être ambiguë.",
+        "Utilise un décor inhabituel pour toi (studio, rue, lieu officiel) sans l'expliquer immédiatement. Le spectateur passe les premières secondes à chercher le contexte — et cette recherche, c'est du temps de visionnage."
+      ],
+      "reel_url": "https://www.instagram.com/reel/DUGnCu4iGM1/",
+      "video": "assets/reels/reel6.mp4",
+      "thumb": "assets/thumbs/reel6.jpg",
+      "duration": 72
+    },
+    {
+      "n": 7,
+      "name": "Confession Secrète / Ce que Personne ne Dit",
+      "principe": "Tu révèles une \"vérité interdite\" — quelque chose que les gens du milieu savent mais ne disent pas. L'effet coulisses. L'effet backstage. Tu ouvres une porte qui était fermée.",
+      "pourquoi": "L'information rare a plus de valeur perçue que l'information accessible. C'est le principe de rareté de Cialdini appliqué au contenu : si tu possèdes une vérité que les autres n'ont pas, ou n'oseront pas dire, ta valeur perçue augmente instantanément. Tu parles depuis l'intérieur — depuis les coulisses — et ça, le spectateur le sent. En termes de comportement d'audience, les confessions génèrent des sauvegardes (le spectateur veut garder l'information) et des partages vers une personne précise (\"t'as vu ça ?\"). Ces deux actions sont parmi les plus fortes en termes de signaux algorithmiques.",
+      "punchline": "Le secret crée la valeur perçue.",
+      "appliquer": [
+        "Liste 5 choses que tu as apprises dans ton domaine et que personne ne t'a jamais enseignées — des vérités contre-intuitives que tu as découvertes par l'expérience. L'une d'elles est ton prochain reel.",
+        "Utilise le hook \"Ce que [les experts / les grandes marques / les gurus] ne veulent pas que tu saches\" — en t'assurant que ce qui suit est réel et vérifiable. Le hook promet un secret ; le contenu doit tenir cette promesse.",
+        "Filme une situation de backstage authentique : un résultat brut avant optimisation, un écran de travail non edité, une erreur que tu as faite. L'authenticité non mise en scène crée une crédibilité que le contenu poli ne peut pas atteindre."
+      ],
+      "reel_url": "https://www.instagram.com/reel/DIoo3LDSsbw/",
+      "video": "assets/reels/reel7.mp4",
+      "thumb": "assets/thumbs/reel7.jpg",
+      "duration": 32
+    },
+    {
+      "n": 8,
+      "name": "Preuve Visuelle Tangible",
+      "principe": "Tu montres au lieu de parler. Un DM réel, des stats brutes, un contrat, une notification, un résultat d'écran. La preuve passe à l'image — pas en résumé.",
+      "pourquoi": "Le principe de preuve sociale de Cialdini fonctionne d'autant mieux que la preuve est concrète et vérifiable. Un chiffre annoncé à l'oral est une promesse. Le même chiffre visible à l'écran dans son interface native devient un fait. Le cerveau traite différemment le récit et la démonstration — la démonstration active les zones liées à la perception directe, le récit active l'imagination. Ce n'est pas neutre : on croit davantage ce qu'on \"voit\" que ce qu'on entend raconter. Sur les réseaux, la preuve visuelle génère aussi des screenshots — les spectateurs capturent l'écran pour garder la preuve. C'est l'un des comportements les plus forts en termes d'engagement qualifié.",
+      "punchline": "Ce que tu montres vaut plus que ce que tu promets.",
+      "appliquer": [
+        "La prochaine fois que tu obtiens un résultat — un virement reçu, une notification d'abonnement, un DM de remerciement — filme-le immédiatement. Pas besoin de mise en scène. L'instant brut vaut plus que la reconstitution.",
+        "Construis un reel entier à partir d'un seul screenshot ou d'une seule stat — et consacre les 3 premières secondes à le montrer en gros plan, avant même d'expliquer. La preuve d'abord, le contexte ensuite.",
+        "Montre le processus intermédiaire, pas seulement le résultat final. Un graphique en cours de montée, un dashboard en temps réel, une boîte mail qui se remplit — la preuve \"en train de se faire\" est plus convaincante qu'un résultat présenté comme acquis."
+      ],
+      "reel_url": "https://www.instagram.com/reel/DICB2AmSZyl/",
+      "video": "assets/reels/reel8.mp4",
+      "thumb": "assets/thumbs/reel8.jpg",
+      "duration": 26
+    },
+    {
+      "n": 9,
+      "name": "Satire / Illogique / Humour Cognitif",
+      "principe": "Tu fais quelque chose qui ne \"devrait pas être logique\". Le comportement, la situation, ou le montage viole une attente implicite. Le cerveau reste pour résoudre l'incohérence.",
+      "pourquoi": "Le cerveau humain est un moteur de prédiction. Il crée en permanence des attentes sur ce qui va se passer — et quand une attente est violée, il entre dans un état d'alerte cognitive. C'est ce qu'on appelle l'erreur de prédiction. Neurologiquement, cet état mobilise plus de ressources attentionnelles que la confirmation d'une attente. La satire et l'humour exploitent ce mécanisme : on installe une logique apparente, puis on la brise. Le spectateur reste parce qu'il cherche la règle cachée derrière l'incohérence. Et le soulagement cognitif quand il comprend — le \"ha !\" — est précisément ce qui déclenche le partage.",
+      "punchline": "Ce qui ne fait pas sens, fait rester.",
+      "appliquer": [
+        "Identifie une croyance très répandue dans ta niche et construis un reel qui la prend au pied de la lettre — jusqu'à l'absurde. L'exagération volontaire d'un conseil mainstream révèle son inanité mieux qu'une critique directe.",
+        "Mets en scène un contraste délibéré : un conseil \"expert\" complexe suivi de la réalité simple de terrain. Le décalage entre les deux niveaux de langage crée l'humour et le message en même temps.",
+        "Joue avec le format lui-même : commence comme un tutoriel sérieux, puis bascule vers quelque chose d'inattendu à mi-reel. La rupture de format est un déclencheur cognitif puissant — surtout si l'inattendu est drôle ou révélateur."
+      ],
+      "reel_url": "https://www.instagram.com/reel/DHjOAhBIq-u/",
+      "video": "assets/reels/reel9.mp4",
+      "thumb": "assets/thumbs/reel9.jpg",
+      "duration": 71
+    },
+    {
+      "n": 10,
+      "name": "Réaction à un Problème de Société",
+      "principe": "Tu prends position sur un sujet que tout le monde vit ou observe — argent, relations, éducation, travail, réseaux, mentalité. Tu n'es plus créateur de contenu : tu es le porte-parole de ce que les gens pensent sans oser le dire.",
+      "pourquoi": "Quand un sujet touche une douleur ou une injustice que beaucoup de personnes partagent, le contenu qui la nomme clairement devient un miroir. Les spectateurs partagent non pas parce que le contenu est brillant, mais parce qu'il valide leur vécu — c'est une observation que je fais systématiquement sur mes vidéos à fort reach. C'est différent du clivage : ici, tu ne divises pas — tu rassembles autour d'une frustration commune. La portée est souvent plus large parce que le sujet dépasse ta niche. Un créateur de contenu qui parle de l'éducation ou de l'argent ne parle plus qu'à ses abonnés : il parle à tout le monde.",
+      "punchline": "Quand tu touches la société, tu touches tout le monde.",
+      "appliquer": [
+        "Fais la liste des frustrations que toi et ton audience partagez avec le reste de la société — pas seulement dans ton domaine. Laquelle revient dans les conversations, dans les commentaires, dans les DM ? C'est là que se cache le contenu à portée maximale.",
+        "Prends une tendance sociale récente — un changement de comportement, une statistique qui circule, un phénomène que tout le monde observe — et donne ton analyse personnelle. L'opinion sur un fait collectif génère plus d'engagement que le fait lui-même.",
+        "Structure ton reel en deux temps : \"Ce que tout le monde fait\" (observation), puis \"Ce que ça révèle\" (ton analyse, ta position). Ce format donne aux spectateurs quelque chose à défendre ou à rejeter — les deux créent de l'engagement."
+      ],
+      "reel_url": "https://www.instagram.com/reel/DHgpKK0IFqY/",
+      "video": "assets/reels/reel10.mp4",
+      "thumb": "assets/thumbs/reel10.jpg",
+      "duration": 67
+    },
+    {
+      "n": 11,
+      "name": "Malaise Social Assumé",
+      "principe": "Tu dis quelque chose qui met volontairement mal à l'aise. Tu brises une norme sociale — pas pour choquer, mais parce que la vérité que tu veux dire ne peut pas être dite autrement.",
+      "pourquoi": "L'inconfort cognitif est un état que le cerveau cherche activement à résoudre. Quand un contenu déclenche un malaise, le spectateur ne peut pas simplement passer à autre chose : il doit traiter l'information. C'est le principe de la dissonance cognitive de Festinger — un écart entre ce qu'on croit et ce qu'on entend génère une tension que seule une réaction (commenter, rejeter, partager pour provoquer un débat) peut soulager. Le malaise social assumé est différent du clivage : tu ne crées pas deux camps, tu touches une vérité que tout le monde ressent mais que personne n'articule. La réaction émotionnelle forte — surprise, gêne, reconnaissance — est exactement ce que les plateformes amplifient.",
+      "punchline": "L'inconfort crée la réaction. La réaction crée la viralité.",
+      "appliquer": [
+        "Identifie une norme de ton domaine que tu trouves absurde ou contre-productive — et dis-le franchement, sans précaution de langage. \"Je sais que c'est pas ce qu'on est censé dire, mais...\" est un signal d'authenticité puissant.",
+        "Nomme une vérité que tes concurrents évitent par peur de déplaire. Ce que tu es prêt à dire que les autres ne disent pas, c'est ce qui construit ta différenciation sur le long terme.",
+        "Observe ce qui génère de l'inconfort dans ta propre audience — les commentaires qui commencent par \"Mais quand même...\" ou \"Pas d'accord, parce que...\" sont des indicateurs de zones à explorer. Reviens dessus avec un reel assumé."
+      ],
+      "reel_url": "https://www.instagram.com/reel/DEIWe7WIrDE/",
+      "video": "assets/reels/reel11.mp4",
+      "thumb": "assets/thumbs/reel11.jpg",
+      "duration": 53
+    },
+    {
+      "n": 12,
+      "name": "Ambiance / Décor / Tension Immersive",
+      "principe": "L'atmosphère de la vidéo te retient autant que le message lui-même. Lumière, musique, regard, silence, environnement — quand l'ambiance est juste, le spectateur est dedans avant même d'avoir compris ce dont tu parles.",
+      "pourquoi": "Le cerveau traite les signaux émotionnels de l'environnement — lumière, musique, rythme, posture — avant de traiter le langage. Ce n'est pas une métaphore : les zones cérébrales liées à l'affect répondent aux stimuli sensoriels avant que le cortex préfrontal entre en jeu. Une ambiance froide et épurée installe une autorité. Une ambiance chaude et intime crée de la proximité. Une tension visuelle — cadrage serré, silence, regard fixe — active le système nerveux autonome avant que tu aies dit un mot. Ce ne sont pas des détails esthétiques. Ce sont des déclencheurs d'engagement qui opèrent en dessous du seuil de conscience du spectateur.",
+      "punchline": "Si l'ambiance capte, le message s'impose.",
+      "appliquer": [
+        "Choisis délibérément l'ambiance de ton prochain reel avant de penser au script. Quelle émotion veux-tu que le spectateur ressente dans les 3 premières secondes ? Travaille ensuite la lumière, le cadrage et la musique pour produire exactement cette émotion.",
+        "Teste un reel sans musique — juste ta voix, un silence, et un regard caméra. L'absence de musique dans un environnement où tout le monde en met crée une tension immédiate. Le silence est un outil d'ambiance sous-exploité.",
+        "Filme dans un décor qui raconte quelque chose sans que tu l'expliques — un bureau qui révèle ta façon de travailler, un lieu qui est chargé de sens pour toi. L'environnement authentique crée une immersion que le fond blanc ne peut pas produire."
+      ],
+      "reel_url": "https://www.instagram.com/reel/DSkv8wtkssz/",
+      "video": "assets/reels/reel12.mp4",
+      "thumb": "assets/thumbs/reel12.jpg",
+      "duration": 36
+    }
+  ],
+  "cheatsheet": [
+    "1. Ultra Clivant — Prends position, crée deux camps, laisse le débat faire le travail.",
+    "2. Geste Visuel — Bouge dans les premières secondes, le cerveau suit le mouvement avant le message.",
+    "3. Transition Surprenante — Coupe brutalement, laisse une boucle ouverte que l'audience doit fermer.",
+    "4. Clivage Social — Force un choix identitaire, les gens commentent pour défendre qui ils sont.",
+    "5. Suspense — Ouvre avec une menace, retourne la situation, le twist fait partager.",
+    "6. Fake Événement — Crée le doute sur la réalité, l'ambiguïté alimente les commentaires.",
+    "7. Confession Secrète — Dis ce que personne n'ose dire, la rareté de l'info crée la valeur.",
+    "8. Preuve Visuelle — Montre, ne raconte pas. L'écran vaut plus que la promesse.",
+    "9. Humour Cognitif — Brise une attente logique, le cerveau reste pour résoudre l'incohérence.",
+    "10. Problème de Société — Touche une douleur collective, tu parles à tout le monde pas juste à ta niche.",
+    "11. Malaise Assumé — Dis la vérité inconfortable, l'inconfort force une réaction.",
+    "12. Ambiance Immersive — L'atmosphère engage avant que le cerveau traite le langage."
+  ],
+  "bridge": {
+    "eyebrow": "LA VRAIE QUESTION",
+    "text": "Tu connais maintenant les 12 mécanismes. Le problème, c'est que connaître un levier et savoir lequel activer — au bon moment, sur la bonne audience, dans la bonne séquence — c'est pas la même chose. Ce qui sépare un créateur qui fait des vues de celui qui convertit ces vues en chiffre d'affaires, c'est un système : choisir le bon déclencheur selon où tu en es, l'enchaîner avec un entonnoir qui mène jusqu'à ton offre, et le reproduire de façon prévisible. C'est exactement ça que je mets en place avec mes clients."
+  },
+  "cta": {
+    "headline": "Tu génères déjà plus de 100 000€ par an — mais tu plafonnes en visibilité ?",
+    "body": "Si tu es coach, infopreneur ou entrepreneur et que tu souhaites devenir viral sur les réseaux sociaux pour scaler ton business, remplis le formulaire juste en dessous 👇",
+    "form_url": "https://go.loicbourget.com/candidature-elite-viralite1772983167265",
+    "button": "Je veux une stratégie de viralité intelligente"
+  }
+}

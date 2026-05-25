@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les 12 Déclencheurs de Contenu Viral — Loïc Bourget</title>
+  <meta name="description" content="Ces 12 déclencheurs, c&#x27;est pas des astuces magiques. C&#x27;est une liste de choses que j&#x27;ai observées — dans mes vidéos, dans celles des autres, en regardant c">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta property="og:title" content="Les 12 Déclencheurs de Contenu Viral">
+  <meta property="og:description" content="Ces 12 déclencheurs, c&#x27;est pas des astuces magiques. C&#x27;est une liste de choses que j&#x27;ai observées — dans mes vidéos, dans celles des autres, en regardant c">
+  <meta property="og:type" content="article">
+  <style>
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('fonts/SpaceGrotesk-500.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('fonts/SpaceGrotesk-700.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('fonts/Manrope-400.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('fonts/Manrope-500.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('fonts/Manrope-600.woff2') format('woff2');
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('fonts/Manrope-700.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+
+:root {
+  --bg: #0A0A0A;
+  --bg-soft: #111111;
+  --surface: rgba(255, 255, 255, 0.035);
+  --surface-2: rgba(255, 255, 255, 0.05);
+  --ring: rgba(255, 255, 255, 0.08);
+  --ring-soft: rgba(255, 255, 255, 0.06);
+  --amber: #F59E0B;
+  --amber-soft: rgba(245, 158, 11, 0.12);
+  --amber-ring: rgba(245, 158, 11, 0.22);
+  --text: #F4F4F5;
+  --text-dim: #A1A1AA;
+  --text-faint: #71717A;
+  --heading: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --body: 'Manrope', system-ui, -apple-system, sans-serif;
+  --radius: 14px;
+  --radius-sm: 10px;
+  --maxw: 1080px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: -0.003em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* Subtle amber glow at top — not a gradient bg, a single soft radial halo */
+body::before {
+  content: '';
+  position: fixed;
+  top: -30vh; left: 50%;
+  transform: translateX(-50%);
+  width: 140vw; height: 90vh;
+  background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(245,158,11,0.10), transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.wrap {
+  position: relative;
+  z-index: 1;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+/* ---- Eyebrow (mono uppercase) ---- */
+.eyebrow {
+  font-family: var(--heading);
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--amber);
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+.eyebrow::before {
+  content: '';
+  width: 22px; height: 1px;
+  background: var(--amber);
+  opacity: 0.7;
+}
+
+/* ---- HERO ---- */
+.hero {
+  padding: 92px 0 60px;
+  border-bottom: 1px solid var(--ring-soft);
+}
+.hero .eyebrow { margin-bottom: 26px; }
+.hero h1 {
+  font-family: var(--heading);
+  font-weight: 700;
+  font-size: clamp(2.3rem, 8vw, 4.4rem);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  max-width: 14ch;
+}
+.hero h1 .accent { color: var(--amber); }
+.hero .byline {
+  margin-top: 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--heading);
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--text-dim);
+  padding: 9px 16px;
+  background: var(--surface);
+  border: 1px solid var(--ring);
+  border-radius: 100px;
+}
+.hero .byline .dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--amber);
+  box-shadow: 0 0 12px rgba(245,158,11,0.7);
+}
+
+/* ---- INTRO ---- */
+.intro { padding: 60px 0; }
+.intro .lead {
+  font-size: clamp(1.05rem, 2.4vw, 1.3rem);
+  line-height: 1.65;
+  color: var(--text);
+  font-weight: 500;
+  max-width: 62ch;
+}
+.intro .lead strong { color: var(--amber); font-weight: 700; }
+.howto {
+  margin-top: 34px;
+  background: var(--surface);
+  border: 1px solid var(--ring);
+  border-radius: var(--radius);
+  padding: 26px 28px;
+  max-width: 64ch;
+}
+.howto .eyebrow { margin-bottom: 14px; }
+.howto p { color: var(--text-dim); font-size: 15.5px; line-height: 1.7; }
+
+/* ---- TRIGGERS ---- */
+.triggers-head {
+  padding: 50px 0 8px;
+}
+.triggers-head .eyebrow { margin-bottom: 14px; }
+.triggers-head h2 {
+  font-family: var(--heading);
+  font-weight: 700;
+  font-size: clamp(1.7rem, 5vw, 2.6rem);
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+}
+
+.trigger {
+  padding: 48px 0;
+  border-top: 1px solid var(--ring-soft);
+}
+
+.trigger-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* The video column */
+.reel {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+}
+.reel-frame {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-soft);
+  border: 1px solid var(--ring);
+  box-shadow: 0 24px 60px -28px rgba(0,0,0,0.9), 0 0 0 1px rgba(245,158,11,0.04);
+}
+.reel-frame video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  max-height: 72vh;
+  object-fit: cover;
+  background: #000;
+  border-radius: var(--radius);
+}
+.reel-meta {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-family: var(--heading);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--text-faint);
+  text-transform: uppercase;
+}
+.reel-meta .reel-link {
+  color: var(--text-dim);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.18s ease;
+}
+.reel-meta .reel-link:hover { color: var(--amber); }
+.reel-meta .reel-link svg { width: 13px; height: 13px; }
+.reel-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 100px;
+  background: var(--amber-soft);
+  border: 1px solid var(--amber-ring);
+  color: var(--amber);
+}
+
+/* The text column */
+.trigger-body { min-width: 0; }
+.trigger-num {
+  font-family: var(--heading);
+  font-weight: 700;
+  font-size: clamp(2.4rem, 7vw, 3.4rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--amber);
+  display: block;
+  margin-bottom: 6px;
+}
+.trigger-num .of { color: var(--text-faint); font-size: 0.45em; letter-spacing: 0.05em; }
+.trigger-name {
+  font-family: var(--heading);
+  font-weight: 700;
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  margin-bottom: 18px;
+}
+.trigger-principe {
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: var(--text);
+  font-weight: 500;
+  margin-bottom: 26px;
+}
+.block-label {
+  font-family: var(--heading);
+  font-weight: 500;
+  font-size: 11.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 10px;
+  display: block;
+}
+.trigger-pourquoi {
+  font-size: 15px;
+  line-height: 1.74;
+  color: var(--text-dim);
+  margin-bottom: 26px;
+}
+
+/* The "loi" amber pull-quote */
+.loi {
+  position: relative;
+  margin: 0 0 26px;
+  padding: 20px 24px;
+  background: var(--amber-soft);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--amber-ring);
+}
+.loi::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 14px; bottom: 14px;
+  width: 3px;
+  background: var(--amber);
+  border-radius: 3px;
+}
+.loi .loi-label {
+  font-family: var(--heading);
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--amber);
+  display: block;
+  margin-bottom: 7px;
+  padding-left: 12px;
+}
+.loi p {
+  font-family: var(--heading);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.4;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  padding-left: 12px;
+}
+
+/* Appliquer list */
+.appliquer { list-style: none; display: grid; gap: 12px; }
+.appliquer li {
+  position: relative;
+  padding: 14px 16px 14px 46px;
+  background: var(--surface);
+  border: 1px solid var(--ring-soft);
+  border-radius: var(--radius-sm);
+  font-size: 14.5px;
+  line-height: 1.62;
+  color: var(--text-dim);
+}
+.appliquer li .idx {
+  position: absolute;
+  left: 14px; top: 13px;
+  width: 22px; height: 22px;
+  border-radius: 7px;
+  background: var(--amber-soft);
+  border: 1px solid var(--amber-ring);
+  color: var(--amber);
+  font-family: var(--heading);
+  font-weight: 700;
+  font-size: 12px;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* ---- CHEATSHEET ---- */
+.cheatsheet {
+  margin: 60px 0;
+  padding: 44px 0 8px;
+  border-top: 1px solid var(--ring-soft);
+}
+.cheatsheet .eyebrow { margin-bottom: 14px; }
+.cheatsheet h2 {
+  font-family: var(--heading);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  letter-spacing: -0.03em;
+  margin-bottom: 28px;
+}
+.cheat-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+.cheat-item {
+  background: var(--surface);
+  border: 1px solid var(--ring-soft);
+  border-radius: var(--radius-sm);
+  padding: 15px 18px;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--text-dim);
+}
+.cheat-item strong {
+  color: var(--text);
+  font-weight: 700;
+  font-family: var(--heading);
+}
+
+/* ---- BRIDGE ---- */
+.bridge {
+  margin: 0 0 0;
+  padding: 56px 0;
+  border-top: 1px solid var(--ring-soft);
+}
+.bridge .eyebrow { margin-bottom: 18px; }
+.bridge p {
+  font-size: clamp(1.05rem, 2.6vw, 1.35rem);
+  line-height: 1.62;
+  color: var(--text);
+  font-weight: 500;
+  max-width: 60ch;
+}
+.bridge p strong { color: var(--amber); font-weight: 700; }
+
+/* ---- CTA ---- */
+.cta {
+  margin: 36px 0 90px;
+  padding: 48px 36px;
+  background:
+    radial-gradient(ellipse 80% 120% at 50% -20%, rgba(245,158,11,0.13), transparent 60%),
+    var(--surface-2);
+  border: 1px solid var(--amber-ring);
+  border-radius: 22px;
+  text-align: center;
+}
+.cta h2 {
+  font-family: var(--heading);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 4.5vw, 2.3rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  max-width: 22ch;
+  margin: 0 auto 18px;
+}
+.cta p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-dim);
+  max-width: 52ch;
+  margin: 0 auto 30px;
+}
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--heading);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  color: #0A0A0A;
+  background: var(--amber);
+  padding: 16px 30px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform 0.18s cubic-bezier(0.16,1,0.3,1), box-shadow 0.18s ease;
+  box-shadow: 0 10px 34px -10px rgba(245,158,11,0.55);
+}
+.cta-btn:hover { transform: translateY(-2px); box-shadow: 0 16px 44px -10px rgba(245,158,11,0.7); }
+.cta-btn:active { transform: translateY(0); }
+.cta-btn svg { width: 17px; height: 17px; }
+
+/* ---- FOOTER ---- */
+.footer {
+  padding: 30px 0 50px;
+  border-top: 1px solid var(--ring-soft);
+  font-size: 13px;
+  color: var(--text-faint);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.footer .brand { font-family: var(--heading); font-weight: 500; color: var(--text-dim); }
+
+/* ============ RESPONSIVE: desktop split layout ============ */
+@media (min-width: 860px) {
+  .wrap { padding: 0 40px; }
+  .hero { padding: 120px 0 76px; }
+  .trigger-grid {
+    grid-template-columns: 340px 1fr;
+    gap: 52px;
+  }
+  /* Video sticks while text scrolls */
+  .reel {
+    position: sticky;
+    top: 40px;
+    margin: 0;
+  }
+  .cheat-grid { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .cta { padding: 64px 56px; }
+}
+
+@media (min-width: 1024px) {
+  .trigger { padding: 64px 0; }
+}
+
+/* Accessibility: visible focus rings */
+a:focus-visible, video:focus-visible, .cta-btn:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
+</style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Guide · Mécanismes de viralité</span>
+      <h1>Les 12 Déclencheurs de Contenu <span class="accent">Viral</span></h1>
+      <span class="byline"><span class="dot"></span>par Loïc Bourget</span>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div class="wrap">
+      <p class="lead">Ces 12 déclencheurs, c&#x27;est pas des astuces magiques. C&#x27;est une liste de choses que j&#x27;ai observées — dans mes vidéos, dans celles des autres, en regardant ce qui marche vraiment. Chaque déclencheur a un nom simple, une explication claire sur pourquoi ça marche dans la tête des gens, et 2 à 3 actions concrètes à tester dès cette semaine. Pas de blabla. Pas de &quot;crée de la valeur&quot;. Des leviers que le cerveau ne peut pas ignorer.</p>
+      <div class="howto">
+        <span class="eyebrow">Comment utiliser ce guide</span>
+        <p>Ce guide, c&#x27;est 12 fiches. Chaque fiche te donne : comment je l&#x27;utilise concrètement, pourquoi ça marche dans la tête de ton audience, la loi à retenir, et 2 à 3 actions directement testables. Pour chaque déclencheur, j&#x27;ai mis un de mes reels comme exemple réel — regarde-le avant de lire les actions. C&#x27;est en voyant le mécanisme en vrai que tu commences à le comprendre. Et après, tu peux plus ne pas le voir.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="triggers-head">
+    <div class="wrap">
+      <span class="eyebrow">Les déclencheurs</span>
+      <h2>12 leviers que le cerveau ne peut pas ignorer</h2>
+    </div>
+  </div>
+
+
+    <section class="trigger" id="trigger-1">
+      <div class="wrap">
+        <div class="trigger-grid">
+          <div class="reel">
+            <div class="reel-frame">
+              <video controls playsinline preload="none" poster="thumbs/reel1.jpg"
+                     aria-label="Reel exemple — Ultra Clivant / Prise de Position Forte">
+                <source src="videos/reel1.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+              </video>
+            </div>
+            <div class="reel-meta">
+              <span class="reel-badge"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg> Exemple · 44s</span>
+              <a class="reel-link" href="https://www.instagram.com/reel/DUBcvSGiDpx/" target="_blank" rel="noopener noreferrer">Voir sur Instagram <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+            </div>
+          </div>
+
+          <div class="trigger-body">
+            <span class="trigger-num">01<span class="of"> / 12</span></span>
+            <h3 class="trigger-name">Ultra Clivant / Prise de Position Forte</h3>
+            <p class="trigger-principe">Tu prends une position qui divise immédiatement. Les gens ne peuvent pas rester neutres. L&#x27;objectif : créer des camps et déclencher le débat.</p>
+
+            <span class="block-label">Pourquoi ça marche</span>
+            <p class="trigger-pourquoi">Quand tu dis quelque chose qui contredit ce que les gens croient, leur cerveau se met en alerte — ils doivent répondre pour se sentir en accord avec eux-mêmes. C&#x27;est physique, ils ne choisissent pas. Ceux qui ne sont pas d&#x27;accord commentent pour défendre leur point de vue. Ceux qui sont d&#x27;accord partagent — parce que ton post dit exactement ce qu&#x27;ils pensaient sans oser le formuler. Résultat : deux camps, deux flux de commentaires, une portée qui explose. Les algorithmes adorent ça parce que les gens passent du temps sur le contenu et interagissent. Un contenu clivant génère les deux en même temps.</p>
+
+            <div class="loi">
+              <span class="loi-label">La loi</span>
+              <p>Plus tu prends position, plus on te répond. La neutralité ne devient jamais virale.</p>
+            </div>
+
+            <span class="block-label">Comment l'appliquer</span>
+            <ul class="appliquer">
+        <li><span class="idx">1</span>Prends la conviction la plus radicale que tu as sur ton domaine — celle que tu n&#x27;oserais pas dire en réunion — et construis un reel entier autour d&#x27;elle. Pas de nuance dans les deux premières secondes. La nuance arrive après, si elle arrive.</li>
+        <li><span class="idx">2</span>Reformule une &quot;vérité acceptée&quot; de ton secteur comme si c&#x27;était un mensonge. &quot;La cohérence, c&#x27;est surestimé.&quot; &quot;Poster tous les jours ne sert à rien si personne ne te croit.&quot; L&#x27;attaque d&#x27;un consensus fort crée immédiatement deux camps.</li>
+        <li><span class="idx">3</span>Lis les commentaires de tes derniers posts. Trouve le sujet sur lequel les gens ne sont pas d&#x27;accord entre eux — c&#x27;est là que se cache ton prochain contenu clivant.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trigger" id="trigger-2">
+      <div class="wrap">
+        <div class="trigger-grid">
+          <div class="reel">
+            <div class="reel-frame">
+              <video controls playsinline preload="none" poster="thumbs/reel2.jpg"
+                     aria-label="Reel exemple — Geste Visuel Fort / Mouvement Accrocheur">
+                <source src="videos/reel2.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+              </video>
+            </div>
+            <div class="reel-meta">
+              <span class="reel-badge"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg> Exemple · 21s</span>
+              <a class="reel-link" href="https://www.instagram.com/reel/DSnXaSPCPdR/" target="_blank" rel="noopener noreferrer">Voir sur Instagram <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+            </div>
+          </div>
+
+          <div class="trigger-body">
+            <span class="trigger-num">02<span class="of"> / 12</span></span>
+            <h3 class="trigger-name">Geste Visuel Fort / Mouvement Accrocheur</h3>
+            <p class="trigger-principe">Un mouvement physique capte l&#x27;œil et empêche le scroll. Marcher, couper, montrer, jeter, pointer — peu importe le geste. Ce qui compte, c&#x27;est que quelque chose bouge dans les premières secondes.</p>
+
+            <span class="block-label">Pourquoi ça marche</span>
+            <p class="trigger-pourquoi">Le cerveau humain est programmé pour détecter le mouvement en priorité absolue. C&#x27;est un réflexe de survie hérité de nos ancêtres : tout ce qui bouge dans le champ visuel mérite une vérification immédiate. Sur un feed où tout le monde est en plan fixe, un geste dans les premières secondes attire l&#x27;œil automatiquement — avant même que le spectateur ait eu le temps de décider consciemment de regarder. Résultat : il reste. Et le temps de visionnage, c&#x27;est la donnée que les algorithmes regardent en premier.</p>
+
+            <div class="loi">
+              <span class="loi-label">La loi</span>
+              <p>Le cerveau suit le mouvement avant d&#x27;écouter le message.</p>
+            </div>
+
+            <span class="block-label">Comment l'appliquer</span>
+            <ul class="appliquer">
+        <li><span class="idx">1</span>Au lieu de commencer face caméra en plan fixe, marche vers l&#x27;objectif tout en parlant. La caméra qui se rapproche de ton visage — ou l&#x27;inverse — crée une tension visuelle immédiate.</li>
+        <li><span class="idx">2</span>Utilise les mains pour montrer quelque chose hors-champ dans la première seconde. &quot;Regarde ce truc&quot; avec un doigt qui pointe crée une curiosité spatiale : le spectateur veut voir ce que tu montres.</li>
+        <li><span class="idx">3</span>Coupe au montage entre deux plans radicalement différents en termes d&#x27;angle ou de distance dans les 3 premières secondes. Même sans musique, le changement de plan capte.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trigger" id="trigger-3">
+      <div class="wrap">
+        <div class="trigger-grid">
+          <div class="reel">
+            <div class="reel-frame">
+              <video controls playsinline preload="none" poster="thumbs/reel3.jpg"
+                     aria-label="Reel exemple — Transition Surprenante">
+                <source src="videos/reel3.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+              </video>
+            </div>
+            <div class="reel-meta">
+              <span class="reel-badge"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg> Exemple · 69s</span>
+              <a class="reel-link" href="https://www.instagram.com/reel/DPjhLgyCG6w/" target="_blank" rel="noopener noreferrer">Voir sur Instagram <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+            </div>
+          </div>
+
+          <div class="trigger-body">
+            <span class="trigger-num">03<span class="of"> / 12</span></span>
+            <h3 class="trigger-name">Transition Surprenante</h3>
+            <p class="trigger-principe">Une rupture brutale de plan, de décor ou d&#x27;ambiance force le spectateur à rester pour comprendre ce qu&#x27;il se passe. La continuité narrative est cassée — le cerveau doit reconstruire.</p>
+
+            <span class="block-label">Pourquoi ça marche</span>
+            <p class="trigger-pourquoi">Ton cerveau ne supporte pas une histoire pas finie. Quand quelque chose est interrompu au milieu — une phrase, une scène, un plan — il ne peut pas lâcher avant de comprendre comment ça se termine. Une transition abrupte, c&#x27;est exactement ça : tu coupes la vidéo sans prévenir, et le spectateur reste pour voir si le décor et le message vont finir par se rejoindre. Ce n&#x27;est pas un jump cut classique — la rupture doit être assez forte pour créer une vraie question dans sa tête. Et tant qu&#x27;il n&#x27;a pas la réponse, il reste.</p>
+
+            <div class="loi">
+              <span class="loi-label">La loi</span>
+              <p>Si la vidéo change, l&#x27;attention reste.</p>
+            </div>
+
+            <span class="block-label">Comment l'appliquer</span>
+            <ul class="appliquer">
+        <li><span class="idx">1</span>Tourne deux parties de ton reel dans deux décors radicalement différents — intérieur/extérieur, debout/assis, clair/sombre. Coupe sans transition douce. L&#x27;effet de rupture fait le travail.</li>
+        <li><span class="idx">2</span>Change de tenue entre deux moments du reel et ne l&#x27;explique pas. L&#x27;incongruité visuelle non résolue retient l&#x27;attention plus longtemps qu&#x27;une explication logique.</li>
+        <li><span class="idx">3</span>Commence dans un décor bruyant et coupe vers un silence total — ou l&#x27;inverse. Le contraste sonore combiné au contraste visuel crée une rupture de réalité que l&#x27;audience ne s&#x27;attendait pas.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trigger" id="trigger-4">
+      <div class="wrap">
+        <div class="trigger-grid">
+          <div class="reel">
+            <div class="reel-frame">
+              <video controls playsinline preload="none" poster="thumbs/reel4.jpg"
+                     aria-label="Reel exemple — Clivage Social (Nous vs Eux)">
+                <source src="videos/reel4.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+              </video>
+            </div>
+            <div class="reel-meta">
+              <span class="reel-badge"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg> Exemple · 56s</span>
+              <a class="reel-link" href="https://www.instagram.com/reel/DDaAGBmoIAD/" target="_blank" rel="noopener noreferrer">Voir sur Instagram <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+            </div>
+          </div>
+
+          <div class="trigger-body">
+            <span class="trigger-num">04<span class="of"> / 12</span></span>
+            <h3 class="trigger-name">Clivage Social (Nous vs Eux)</h3>
+            <p class="trigger-principe">Tu forces le public à se positionner dans un camp. Pas sur un sujet abstrait — sur leur identité. &quot;Ceux qui réussissent font ça. Les autres font ça.&quot; Il n&#x27;y a pas de milieu.</p>
+
+            <span class="block-label">Pourquoi ça marche</span>
+            <p class="trigger-pourquoi">Quand quelqu&#x27;un sent que son identité est catégorisée dans un camp, il réagit. Pas par choix rationnel — par réflexe. Si tu le mets dans le &quot;bon&quot; camp, il valide et partage pour le montrer aux autres. Si tu le mets dans le &quot;mauvais&quot; camp, il commente pour protester — ou pire, il reconnaît que c&#x27;est vrai et il partage quand même. Dans les deux cas, tu gagnes. Et les commentaires longs, émotionnels, avec des threads entre spectateurs qui se répondent — c&#x27;est exactement ce que les algorithmes prennent pour signal que ton contenu vaut la peine d&#x27;être diffusé.</p>
+
+            <div class="loi">
+              <span class="loi-label">La loi</span>
+              <p>Les gens commentent pour défendre leur identité.</p>
+            </div>
+
+            <span class="block-label">Comment l'appliquer</span>
+            <ul class="appliquer">
+        <li><span class="idx">1</span>Formule ton hook comme une ligne de partage des eaux : &quot;Les gens qui [résultat que tout le monde veut] font X. Ceux qui [résultat que personne ne veut] font Y.&quot; Ne nuance pas dans le hook — la nuance peut venir après, dans le corps.</li>
+        <li><span class="idx">2</span>Cible un comportement que beaucoup pratiquent en croyant bien faire — et montre pourquoi c&#x27;est ce qui les bloque. Le &quot;vous faites tous cette erreur&quot; crée de la friction productive : ceux qui ne font pas l&#x27;erreur partagent pour marquer leur différence.</li>
+        <li><span class="idx">3</span>Utilise des métaphores de camp identitaire fort de ta niche : &quot;les créateurs qui durent&quot; vs &quot;ceux qui abandonnent après 3 mois&quot;, &quot;ceux qui vendent&quot; vs &quot;ceux qui produisent sans retour&quot;. Plus le camp est désirable, plus les gens veulent s&#x27;y identifier explicitement en commentaire.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trigger" id="trigger-5">
+      <div class="wrap">
+        <div class="trigger-grid">
+          <div class="reel">
+            <div class="reel-frame">
+              <video controls playsinline preload="none" poster="thumbs/reel5.jpg"
+                     aria-label="Reel exemple — Suspense / Tension Dramatique">
+                <source src="videos/reel5.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+              </video>
+            </div>
+            <div class="reel-meta">
+              <span class="reel-badge"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg> Exemple · 21s</span>
+              <a class="reel-link" href="https://www.instagram.com/reel/DAVgMNXTdFJ/" target="_blank" rel="noopener noreferrer">Voir sur Instagram <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+            </div>
+          </div>
+
+          <div class="trigger-body">
+            <span class="trigger-num">05<span class="of"> / 12</span></span>
+            <h3 class="trigger-name">Suspense / Tension Dramatique</h3>
+            <p class="trigger-principe">Tu laisses croire qu&#x27;un problème grave arrive — puis tu retournes la situation. La mécanique : peur, puis curiosité, puis révélation. Le spectateur ne peut pas partir avant de savoir comment ça se termine.</p>
+
+            <span class="block-label">Pourquoi ça marche</span>
+            <p class="trigger-pourquoi">Le cerveau réagit beaucoup plus fort à une menace qu&#x27;à une bonne nouvelle. Si les premières secondes de ta vidéo signalent un danger ou une grosse erreur, les gens s&#x27;arrêtent — instinctivement. Et tant que tu n&#x27;as pas révélé ce qui s&#x27;est passé, ils ne peuvent pas partir. C&#x27;est inconfortable de laisser une histoire non résolue. Alors ils restent jusqu&#x27;au bout. Et le twist final — le retournement, la révélation — leur procure un soulagement tellement fort qu&#x27;ils ont envie de partager ce qu&#x27;ils viennent de vivre. On partage ce qui nous a fait ressentir quelque chose de fort.</p>
+
+            <div class="loi">
+              <span class="loi-label">La loi</span>
+              <p>La tension retient, le twist fait partager.</p>
+            </div>
+
+            <span class="block-label">Comment l'appliquer</span>
+            <ul class="appliquer">
+        <li><span class="idx">1</span>Commence ton reel par une phrase qui annonce une catastrophe ou une erreur grave : &quot;J&#x27;ai failli tout perdre à cause de ça.&quot; ou &quot;Ce que j&#x27;ai fait m&#x27;a coûté des mois.&quot; Ne révèle pas le twist avant la moitié du reel.</li>
+        <li><span class="idx">2</span>Structure ton contenu en 3 temps explicites : le problème (montré, pas résumé), le moment de basculement (la prise de conscience ou l&#x27;action), et la révélation (ce que ça a changé). Chaque temps doit être assez court pour créer de l&#x27;impatience.</li>
+        <li><span class="idx">3</span>Au montage, ajoute une pause ou un silence juste avant la révélation. Ce blanc dure 1 à 2 secondes maximum — mais il simule la tension théâtrale du &quot;et alors ?&quot; qui retient jusqu&#x27;au bout.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trigger" id="trigger-6">
+      <div class="wrap">
+        <div class="trigger-grid">
+          <div class="reel">
+            <div class="reel-frame">
+              <video controls playsinline preload="none" poster="thumbs/reel6.jpg"
+                     aria-label="Reel exemple — Fake Événement / Rupture de Réalité">
+                <source src="videos/reel6.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+              </video>
+            </div>
+            <div class="reel-meta">
+              <span class="reel-badge"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg> Exemple · 72s</span>
+              <a class="reel-link" href="https://www.instagram.com/reel/DUGnCu4iGM1/" target="_blank" rel="noopener noreferrer">Voir sur Instagram <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+            </div>
+          </div>
+
+          <div class="trigger-body">
+            <span class="trigger-num">06<span class="of"> / 12</span></span>
+            <h3 class="trigger-name">Fake Événement / Rupture de Réalité</h3>
+            <p class="trigger-principe">Tu mets en scène une situation &quot;officielle&quot; ou choquante — quelque chose qui ne devrait pas se passer dans une vidéo normale. Les gens se demandent : c&#x27;est vrai ou pas ?</p>
+
+            <span class="block-label">Pourquoi ça marche</span>
+            <p class="trigger-pourquoi">Quand le cerveau ne sait pas si ce qu&#x27;il voit est réel, il ne peut pas décider de partir. Partir, ça voudrait dire rater la réponse — et ça, le cerveau ne peut pas l&#x27;accepter. Il a besoin de savoir. Alors il reste. Et plus la situation semble ambiguë — ni clairement réelle, ni clairement fictive — plus la tension monte. Les commentaires &quot;c&#x27;est vrai ??&quot; ou &quot;attends c&#x27;est quoi ce truc&quot; sont exactement ceux qui font exploser la portée organique, parce que les gens entraînent d&#x27;autres personnes dans la conversation pour trancher ensemble.</p>
+
+            <div class="loi">
+              <span class="loi-label">La loi</span>
+              <p>Le doute alimente les commentaires.</p>
+            </div>
+
+            <span class="block-label">Comment l'appliquer</span>
+            <ul class="appliquer">
+        <li><span class="idx">1</span>Simule un écran de notification, un email reçu, ou un message entrant — et filme ta réaction en temps réel avant d&#x27;expliquer ce que c&#x27;est. La mise en scène de la découverte crée le sentiment d&#x27;assister à quelque chose d&#x27;authentique.</li>
+        <li><span class="idx">2</span>Construis un hook qui semble annoncer un événement impossible ou improbable — et joue-le complètement droit, sans signaler que c&#x27;est une mise en scène. Laisse le titre ou la première phrase être ambiguë.</li>
+        <li><span class="idx">3</span>Utilise un décor inhabituel pour toi (studio, rue, lieu officiel) sans l&#x27;expliquer immédiatement. Le spectateur passe les premières secondes à chercher le contexte — et cette recherche, c&#x27;est du temps de visionnage.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trigger" id="trigger-7">
+      <div class="wrap">
+        <div class="trigger-grid">
+          <div class="reel">
+            <div class="reel-frame">
+              <video controls playsinline preload="none" poster="thumbs/reel7.jpg"
+                     aria-label="Reel exemple — Confession Secrète / Ce que Personne ne Dit">
+                <source src="videos/reel7.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+              </video>
+            </div>
+            <div class="reel-meta">
+              <span class="reel-badge"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg> Exemple · 32s</span>
+              <a class="reel-link" href="https://www.instagram.com/reel/DIoo3LDSsbw/" target="_blank" rel="noopener noreferrer">Voir sur Instagram <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+            </div>
+          </div>
+
+          <div class="trigger-body">
+            <span class="trigger-num">07<span class="of"> / 12</span></span>
+            <h3 class="trigger-name">Confession Secrète / Ce que Personne ne Dit</h3>
+            <p class="trigger-principe">Tu révèles une &quot;vérité interdite&quot; — quelque chose que les gens du milieu savent mais ne disent pas. L&#x27;effet coulisses. L&#x27;effet backstage. Tu ouvres une porte qui était fermée.</p>
+
+            <span class="block-label">Pourquoi ça marche</span>
+            <p class="trigger-pourquoi">Une information que tout le monde n&#x27;a pas vaut plus qu&#x27;une information accessible à n&#x27;importe qui. Quand tu dis quelque chose que les autres dans ton domaine savent mais n&#x27;osent pas dire, les gens sentent qu&#x27;ils viennent d&#x27;accéder à quelque chose de rare. Et une information rare, on ne la laisse pas défiler dans le feed — on la sauvegarde, on la transfère à une personne précise, on la note quelque part. Ces comportements-là sont parmi ceux qui envoient les meilleurs signaux aux algorithmes. Tu passes du statut de créateur de contenu au statut d&#x27;initiateur qui parle depuis les coulisses.</p>
+
+            <div class="loi">
+              <span class="loi-label">La loi</span>
+              <p>Le secret crée la valeur perçue.</p>
+            </div>
+
+            <span class="block-label">Comment l'appliquer</span>
+            <ul class="appliquer">
+        <li><span class="idx">1</span>Liste 5 choses que tu as apprises dans ton domaine et que personne ne t&#x27;a jamais enseignées — des vérités contre-intuitives que tu as découvertes par l&#x27;expérience. L&#x27;une d&#x27;elles est ton prochain reel.</li>
+        <li><span class="idx">2</span>Utilise le hook &quot;Ce que [les experts / les grandes marques / les gurus] ne veulent pas que tu saches&quot; — en t&#x27;assurant que ce qui suit est réel et vérifiable. Le hook promet un secret ; le contenu doit tenir cette promesse.</li>
+        <li><span class="idx">3</span>Filme une situation de backstage authentique : un résultat brut avant optimisation, un écran de travail non edité, une erreur que tu as faite. L&#x27;authenticité non mise en scène crée une crédibilité que le contenu poli ne peut pas atteindre.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trigger" id="trigger-8">
+      <div class="wrap">
+        <div class="trigger-grid">
+          <div class="reel">
+            <div class="reel-frame">
+              <video controls playsinline preload="none" poster="thumbs/reel8.jpg"
+                     aria-label="Reel exemple — Preuve Visuelle Tangible">
+                <source src="videos/reel8.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+              </video>
+            </div>
+            <div class="reel-meta">
+              <span class="reel-badge"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg> Exemple · 26s</span>
+              <a class="reel-link" href="https://www.instagram.com/reel/DICB2AmSZyl/" target="_blank" rel="noopener noreferrer">Voir sur Instagram <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+            </div>
+          </div>
+
+          <div class="trigger-body">
+            <span class="trigger-num">08<span class="of"> / 12</span></span>
+            <h3 class="trigger-name">Preuve Visuelle Tangible</h3>
+            <p class="trigger-principe">Tu montres au lieu de parler. Un DM réel, des stats brutes, un contrat, une notification, un résultat d&#x27;écran. La preuve passe à l&#x27;image — pas en résumé.</p>
+
+            <span class="block-label">Pourquoi ça marche</span>
+            <p class="trigger-pourquoi">Il y a une différence entre entendre quelqu&#x27;un te dire qu&#x27;il a eu un résultat et le voir de tes propres yeux sur son écran. Le cerveau ne traite pas ces deux choses de la même façon. Ce qu&#x27;on entend raconter, on l&#x27;évalue, on le doute. Ce qu&#x27;on voit directement, on y croit. Un chiffre annoncé à l&#x27;oral, c&#x27;est une promesse. Le même chiffre visible dans l&#x27;interface native d&#x27;un virement ou d&#x27;un dashboard, c&#x27;est une preuve. Et les preuves, les gens les capturent — ils font des screenshots pour les garder ou les envoyer. C&#x27;est un signe fort d&#x27;engagement que les plateformes savent lire.</p>
+
+            <div class="loi">
+              <span class="loi-label">La loi</span>
+              <p>Ce que tu montres vaut plus que ce que tu promets.</p>
+            </div>
+
+            <span class="block-label">Comment l'appliquer</span>
+            <ul class="appliquer">
+        <li><span class="idx">1</span>La prochaine fois que tu obtiens un résultat — un virement reçu, une notification d&#x27;abonnement, un DM de remerciement — filme-le immédiatement. Pas besoin de mise en scène. L&#x27;instant brut vaut plus que la reconstitution.</li>
+        <li><span class="idx">2</span>Construis un reel entier à partir d&#x27;un seul screenshot ou d&#x27;une seule stat — et consacre les 3 premières secondes à le montrer en gros plan, avant même d&#x27;expliquer. La preuve d&#x27;abord, le contexte ensuite.</li>
+        <li><span class="idx">3</span>Montre le processus intermédiaire, pas seulement le résultat final. Un graphique en cours de montée, un dashboard en temps réel, une boîte mail qui se remplit — la preuve &quot;en train de se faire&quot; est plus convaincante qu&#x27;un résultat présenté comme acquis.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trigger" id="trigger-9">
+      <div class="wrap">
+        <div class="trigger-grid">
+          <div class="reel">
+            <div class="reel-frame">
+              <video controls playsinline preload="none" poster="thumbs/reel9.jpg"
+                     aria-label="Reel exemple — Satire / Illogique / Humour Cognitif">
+                <source src="videos/reel9.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+              </video>
+            </div>
+            <div class="reel-meta">
+              <span class="reel-badge"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg> Exemple · 71s</span>
+              <a class="reel-link" href="https://www.instagram.com/reel/DHjOAhBIq-u/" target="_blank" rel="noopener noreferrer">Voir sur Instagram <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+            </div>
+          </div>
+
+          <div class="trigger-body">
+            <span class="trigger-num">09<span class="of"> / 12</span></span>
+            <h3 class="trigger-name">Satire / Illogique / Humour Cognitif</h3>
+            <p class="trigger-principe">Tu fais quelque chose qui ne &quot;devrait pas être logique&quot;. Le comportement, la situation, ou le montage viole une attente implicite. Le cerveau reste pour résoudre l&#x27;incohérence.</p>
+
+            <span class="block-label">Pourquoi ça marche</span>
+            <p class="trigger-pourquoi">Le cerveau passe son temps à anticiper ce qui va se passer. C&#x27;est son mode par défaut. Quand tu regardes une vidéo, tu as déjà une idée de comment elle va continuer. Et si la suite ne correspond pas du tout à ce que tu attendais, tu restes — parce que ton cerveau veut comprendre ce qui vient de se passer. C&#x27;est pas une question de volonté. La satire et l&#x27;humour marchent exactement comme ça : tu installes une logique, puis tu la casses. Le spectateur cherche la règle cachée. Et quand il comprend enfin — le moment du &quot;ha !&quot; — il ressent quelque chose de fort. Et ce qu&#x27;on ressent fortement, on le partage.</p>
+
+            <div class="loi">
+              <span class="loi-label">La loi</span>
+              <p>Ce qui ne fait pas sens, fait rester.</p>
+            </div>
+
+            <span class="block-label">Comment l'appliquer</span>
+            <ul class="appliquer">
+        <li><span class="idx">1</span>Identifie une croyance très répandue dans ta niche et construis un reel qui la prend au pied de la lettre — jusqu&#x27;à l&#x27;absurde. L&#x27;exagération volontaire d&#x27;un conseil mainstream révèle son inanité mieux qu&#x27;une critique directe.</li>
+        <li><span class="idx">2</span>Mets en scène un contraste délibéré : un conseil &quot;expert&quot; complexe suivi de la réalité simple de terrain. Le décalage entre les deux niveaux de langage crée l&#x27;humour et le message en même temps.</li>
+        <li><span class="idx">3</span>Joue avec le format lui-même : commence comme un tutoriel sérieux, puis bascule vers quelque chose d&#x27;inattendu à mi-reel. La rupture de format est un déclencheur cognitif puissant — surtout si l&#x27;inattendu est drôle ou révélateur.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trigger" id="trigger-10">
+      <div class="wrap">
+        <div class="trigger-grid">
+          <div class="reel">
+            <div class="reel-frame">
+              <video controls playsinline preload="none" poster="thumbs/reel10.jpg"
+                     aria-label="Reel exemple — Réaction à un Problème de Société">
+                <source src="videos/reel10.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+              </video>
+            </div>
+            <div class="reel-meta">
+              <span class="reel-badge"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg> Exemple · 67s</span>
+              <a class="reel-link" href="https://www.instagram.com/reel/DHgpKK0IFqY/" target="_blank" rel="noopener noreferrer">Voir sur Instagram <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+            </div>
+          </div>
+
+          <div class="trigger-body">
+            <span class="trigger-num">10<span class="of"> / 12</span></span>
+            <h3 class="trigger-name">Réaction à un Problème de Société</h3>
+            <p class="trigger-principe">Tu prends position sur un sujet que tout le monde vit ou observe — argent, relations, éducation, travail, réseaux, mentalité. Tu n&#x27;es plus créateur de contenu : tu es le porte-parole de ce que les gens pensent sans oser le dire.</p>
+
+            <span class="block-label">Pourquoi ça marche</span>
+            <p class="trigger-pourquoi">Quand une frustration est partagée par beaucoup de monde et que quelqu&#x27;un la nomme clairement, ce contenu-là devient un miroir. Les gens ne le partagent pas parce qu&#x27;il est brillant. Ils le partagent parce qu&#x27;il valide exactement ce qu&#x27;ils ressentaient sans savoir comment le dire. C&#x27;est différent du clivage — ici, tu ne divises pas, tu rassembles autour d&#x27;une douleur commune. Et parce que le sujet dépasse ta niche, ta portée dépasse aussi tes abonnés habituels. Un créateur qui parle de l&#x27;argent ou de l&#x27;éducation, ce jour-là, ne parle plus qu&#x27;à sa communauté : il parle à tout le monde.</p>
+
+            <div class="loi">
+              <span class="loi-label">La loi</span>
+              <p>Quand tu touches la société, tu touches tout le monde.</p>
+            </div>
+
+            <span class="block-label">Comment l'appliquer</span>
+            <ul class="appliquer">
+        <li><span class="idx">1</span>Fais la liste des frustrations que toi et ton audience partagez avec le reste de la société — pas seulement dans ton domaine. Laquelle revient dans les conversations, dans les commentaires, dans les DM ? C&#x27;est là que se cache le contenu à portée maximale.</li>
+        <li><span class="idx">2</span>Prends une tendance sociale récente — un changement de comportement, une statistique qui circule, un phénomène que tout le monde observe — et donne ton analyse personnelle. L&#x27;opinion sur un fait collectif génère plus d&#x27;engagement que le fait lui-même.</li>
+        <li><span class="idx">3</span>Structure ton reel en deux temps : &quot;Ce que tout le monde fait&quot; (observation), puis &quot;Ce que ça révèle&quot; (ton analyse, ta position). Ce format donne aux spectateurs quelque chose à défendre ou à rejeter — les deux créent de l&#x27;engagement.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trigger" id="trigger-11">
+      <div class="wrap">
+        <div class="trigger-grid">
+          <div class="reel">
+            <div class="reel-frame">
+              <video controls playsinline preload="none" poster="thumbs/reel11.jpg"
+                     aria-label="Reel exemple — Malaise Social Assumé">
+                <source src="videos/reel11.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+              </video>
+            </div>
+            <div class="reel-meta">
+              <span class="reel-badge"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg> Exemple · 53s</span>
+              <a class="reel-link" href="https://www.instagram.com/reel/DEIWe7WIrDE/" target="_blank" rel="noopener noreferrer">Voir sur Instagram <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+            </div>
+          </div>
+
+          <div class="trigger-body">
+            <span class="trigger-num">11<span class="of"> / 12</span></span>
+            <h3 class="trigger-name">Malaise Social Assumé</h3>
+            <p class="trigger-principe">Tu dis quelque chose qui met volontairement mal à l&#x27;aise. Tu brises une norme sociale — pas pour choquer, mais parce que la vérité que tu veux dire ne peut pas être dite autrement.</p>
+
+            <span class="block-label">Pourquoi ça marche</span>
+            <p class="trigger-pourquoi">Quand quelque chose te met mal à l&#x27;aise, tu ne peux pas juste passer à autre chose. Le malaise, ça se traite — soit en commentant pour le rejeter, soit en le partageant pour que d&#x27;autres réagissent avec toi, soit en le gardant parce que tu sais au fond que c&#x27;est vrai. Dans tous les cas, tu t&#x27;arrêtes. Le malaise social assumé, c&#x27;est différent du clivage : tu ne crées pas deux camps sur un sujet. Tu touches une vérité que tout le monde a ressentie mais que personne n&#x27;articule. Et cette reconnaissance — &quot;c&#x27;est exactement ça, mais c&#x27;est inconfortable à entendre&quot; — génère des réactions fortes. Les plateformes le savent et amplifient.</p>
+
+            <div class="loi">
+              <span class="loi-label">La loi</span>
+              <p>L&#x27;inconfort crée la réaction. La réaction crée la viralité.</p>
+            </div>
+
+            <span class="block-label">Comment l'appliquer</span>
+            <ul class="appliquer">
+        <li><span class="idx">1</span>Identifie une norme de ton domaine que tu trouves absurde ou contre-productive — et dis-le franchement, sans précaution de langage. &quot;Je sais que c&#x27;est pas ce qu&#x27;on est censé dire, mais...&quot; est un signal d&#x27;authenticité puissant.</li>
+        <li><span class="idx">2</span>Nomme une vérité que tes concurrents évitent par peur de déplaire. Ce que tu es prêt à dire que les autres ne disent pas, c&#x27;est ce qui construit ta différenciation sur le long terme.</li>
+        <li><span class="idx">3</span>Observe ce qui génère de l&#x27;inconfort dans ta propre audience — les commentaires qui commencent par &quot;Mais quand même...&quot; ou &quot;Pas d&#x27;accord, parce que...&quot; sont des indicateurs de zones à explorer. Reviens dessus avec un reel assumé.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trigger" id="trigger-12">
+      <div class="wrap">
+        <div class="trigger-grid">
+          <div class="reel">
+            <div class="reel-frame">
+              <video controls playsinline preload="none" poster="thumbs/reel12.jpg"
+                     aria-label="Reel exemple — Ambiance / Décor / Tension Immersive">
+                <source src="videos/reel12.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+              </video>
+            </div>
+            <div class="reel-meta">
+              <span class="reel-badge"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg> Exemple · 36s</span>
+              <a class="reel-link" href="https://www.instagram.com/reel/DSkv8wtkssz/" target="_blank" rel="noopener noreferrer">Voir sur Instagram <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+            </div>
+          </div>
+
+          <div class="trigger-body">
+            <span class="trigger-num">12<span class="of"> / 12</span></span>
+            <h3 class="trigger-name">Ambiance / Décor / Tension Immersive</h3>
+            <p class="trigger-principe">L&#x27;atmosphère de la vidéo te retient autant que le message lui-même. Lumière, musique, regard, silence, environnement — quand l&#x27;ambiance est juste, le spectateur est dedans avant même d&#x27;avoir compris ce dont tu parles.</p>
+
+            <span class="block-label">Pourquoi ça marche</span>
+            <p class="trigger-pourquoi">Le cerveau lit les émotions avant de lire les mots. La lumière, la musique, la façon dont tu te tiens, le silence — tout ça est traité avant que ton audience ait compris une seule phrase de ce que tu dis. Une ambiance froide et épurée installe une impression d&#x27;autorité. Une ambiance chaude et proche crée de l&#x27;intimité. Un regard fixe dans un silence crée une tension que le spectateur ressent dans son corps. Ce ne sont pas des détails de mise en scène. Ce sont des déclencheurs qui agissent avant même que le spectateur ait décidé consciemment de regarder.</p>
+
+            <div class="loi">
+              <span class="loi-label">La loi</span>
+              <p>Si l&#x27;ambiance capte, le message s&#x27;impose.</p>
+            </div>
+
+            <span class="block-label">Comment l'appliquer</span>
+            <ul class="appliquer">
+        <li><span class="idx">1</span>Choisis délibérément l&#x27;ambiance de ton prochain reel avant de penser au script. Quelle émotion veux-tu que le spectateur ressente dans les 3 premières secondes ? Travaille ensuite la lumière, le cadrage et la musique pour produire exactement cette émotion.</li>
+        <li><span class="idx">2</span>Teste un reel sans musique — juste ta voix, un silence, et un regard caméra. L&#x27;absence de musique dans un environnement où tout le monde en met crée une tension immédiate. Le silence est un outil d&#x27;ambiance sous-exploité.</li>
+        <li><span class="idx">3</span>Filme dans un décor qui raconte quelque chose sans que tu l&#x27;expliques — un bureau qui révèle ta façon de travailler, un lieu qui est chargé de sens pour toi. L&#x27;environnement authentique crée une immersion que le fond blanc ne peut pas produire.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="cheatsheet" id="cheatsheet">
+      <div class="wrap">
+        <span class="eyebrow">Mémo</span>
+        <h2>Les 12 déclencheurs en une page</h2>
+        <div class="cheat-grid">
+        <div class="cheat-item"><strong>1. Ultra Clivant —</strong> Prends position, crée deux camps, laisse le débat faire le travail.</div>
+        <div class="cheat-item"><strong>2. Geste Visuel —</strong> Bouge dans les premières secondes, le cerveau suit le mouvement avant le message.</div>
+        <div class="cheat-item"><strong>3. Transition Surprenante —</strong> Coupe brutalement, laisse une boucle ouverte que l&#x27;audience doit fermer.</div>
+        <div class="cheat-item"><strong>4. Clivage Social —</strong> Force un choix identitaire, les gens commentent pour défendre qui ils sont.</div>
+        <div class="cheat-item"><strong>5. Suspense —</strong> Ouvre avec une menace, retourne la situation, le twist fait partager.</div>
+        <div class="cheat-item"><strong>6. Fake Événement —</strong> Crée le doute sur la réalité, l&#x27;ambiguïté alimente les commentaires.</div>
+        <div class="cheat-item"><strong>7. Confession Secrète —</strong> Dis ce que personne n&#x27;ose dire, la rareté de l&#x27;info crée la valeur.</div>
+        <div class="cheat-item"><strong>8. Preuve Visuelle —</strong> Montre, ne raconte pas. L&#x27;écran vaut plus que la promesse.</div>
+        <div class="cheat-item"><strong>9. Humour Cognitif —</strong> Brise une attente logique, le cerveau reste pour résoudre l&#x27;incohérence.</div>
+        <div class="cheat-item"><strong>10. Problème de Société —</strong> Touche une douleur collective, tu parles à tout le monde pas juste à ta niche.</div>
+        <div class="cheat-item"><strong>11. Malaise Assumé —</strong> Dis la vérité inconfortable, l&#x27;inconfort force une réaction.</div>
+        <div class="cheat-item"><strong>12. Ambiance Immersive —</strong> L&#x27;atmosphère engage avant que le cerveau traite le langage.</div>
+        </div>
+      </div>
+    </section>
+
+  <section class="bridge">
+    <div class="wrap">
+      <span class="eyebrow">MAINTENANT LA VRAIE QUESTION</span>
+      <p>Tu connais les 12 mécanismes. Mais les connaître, c&#x27;est pas ce qui change tes résultats. Ce qui change tes résultats, c&#x27;est de savoir lequel utiliser à quel moment — et de l&#x27;enchaîner avec un entonnoir qui mène jusqu&#x27;à ce que tu vends. Faire des vues, c&#x27;est facile quand tu maîtrises ces leviers. Transformer ces vues en revenus de façon régulière, c&#x27;est ça qui demande un vrai système. Et c&#x27;est exactement ce que je mets en place avec ceux que j&#x27;accompagne.</p>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="wrap">
+      <div class="cta">
+        <h2>Tu génères déjà plus de 100 000€ par an — mais tu plafonnes en visibilité ?</h2>
+        <p>Si tu es coach, infopreneur ou entrepreneur et que tu souhaites devenir viral sur les réseaux sociaux pour scaler ton business, remplis le formulaire juste en dessous 👇</p>
+        <a class="cta-btn" href="https://go.loicbourget.com/candidature-elite-viralite1772983167265" target="_blank" rel="noopener noreferrer">
+          Je veux une stratégie de viralité intelligente <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;width:100%;">
+      <span class="brand">Les 12 Déclencheurs de Contenu Viral</span>
+      <span>© Loïc Bourget</span>
+    </div>
+  </footer>
+
+</body>
+</html>
