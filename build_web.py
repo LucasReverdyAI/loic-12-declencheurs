@@ -86,18 +86,22 @@ CSS = r"""
 }
 
 :root {
-  --bg: #0A0A0A;
-  --bg-soft: #111111;
-  --surface: rgba(255, 255, 255, 0.035);
-  --surface-2: rgba(255, 255, 255, 0.05);
-  --ring: rgba(255, 255, 255, 0.08);
-  --ring-soft: rgba(255, 255, 255, 0.06);
+  --bg: #FFFFFF;
+  --bg-soft: #FAFAF9;
+  --surface: #FFFFFF;
+  --surface-2: #FAFAF9;
+  --ring: rgba(10, 10, 10, 0.10);
+  --ring-soft: rgba(10, 10, 10, 0.07);
   --amber: #F59E0B;
-  --amber-soft: rgba(245, 158, 11, 0.12);
-  --amber-ring: rgba(245, 158, 11, 0.22);
-  --text: #F4F4F5;
-  --text-dim: #A1A1AA;
+  --amber-ink: #B45309;
+  --amber-soft: #FEF6E7;
+  --amber-tint: #FEF3C7;
+  --amber-ring: rgba(245, 158, 11, 0.30);
+  --text: #18181B;
+  --text-dim: #52525B;
   --text-faint: #71717A;
+  --shadow-sm: 0 1px 2px rgba(10,10,10,0.04), 0 2px 8px rgba(10,10,10,0.04);
+  --shadow-md: 0 2px 4px rgba(10,10,10,0.04), 0 10px 30px -12px rgba(10,10,10,0.12);
   --heading: 'Space Grotesk', system-ui, -apple-system, sans-serif;
   --body: 'Manrope', system-ui, -apple-system, sans-serif;
   --radius: 14px;
@@ -122,14 +126,14 @@ body {
   overflow-x: hidden;
 }
 
-/* Subtle amber glow at top — not a gradient bg, a single soft radial halo */
+/* Very subtle warm halo at top — barely there on white, just lifts the hero */
 body::before {
   content: '';
   position: fixed;
-  top: -30vh; left: 50%;
+  top: -34vh; left: 50%;
   transform: translateX(-50%);
-  width: 140vw; height: 90vh;
-  background: radial-gradient(ellipse 50% 50% at 50% 50%, rgba(245,158,11,0.10), transparent 70%);
+  width: 140vw; height: 80vh;
+  background: radial-gradient(ellipse 46% 50% at 50% 50%, rgba(245,158,11,0.07), transparent 72%);
   pointer-events: none;
   z-index: 0;
 }
@@ -145,11 +149,11 @@ body::before {
 /* ---- Eyebrow (mono uppercase) ---- */
 .eyebrow {
   font-family: var(--heading);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 12px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--amber);
+  color: var(--amber-ink);
   display: inline-flex;
   align-items: center;
   gap: 9px;
@@ -158,7 +162,7 @@ body::before {
   content: '';
   width: 22px; height: 1px;
   background: var(--amber);
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 /* ---- HERO ---- */
@@ -189,11 +193,12 @@ body::before {
   background: var(--surface);
   border: 1px solid var(--ring);
   border-radius: 100px;
+  box-shadow: var(--shadow-sm);
 }
 .hero .byline .dot {
   width: 6px; height: 6px; border-radius: 50%;
   background: var(--amber);
-  box-shadow: 0 0 12px rgba(245,158,11,0.7);
+  box-shadow: 0 0 0 3px rgba(245,158,11,0.18);
 }
 
 /* ---- INTRO ---- */
@@ -205,14 +210,15 @@ body::before {
   font-weight: 500;
   max-width: 62ch;
 }
-.intro .lead strong { color: var(--amber); font-weight: 700; }
+.intro .lead strong { color: var(--amber-ink); font-weight: 700; }
 .howto {
   margin-top: 34px;
-  background: var(--surface);
-  border: 1px solid var(--ring);
+  background: var(--bg-soft);
+  border: 1px solid var(--ring-soft);
   border-radius: var(--radius);
   padding: 26px 28px;
   max-width: 64ch;
+  box-shadow: var(--shadow-sm);
 }
 .howto .eyebrow { margin-bottom: 14px; }
 .howto p { color: var(--text-dim); font-size: 15.5px; line-height: 1.7; }
@@ -253,9 +259,9 @@ body::before {
   position: relative;
   border-radius: var(--radius);
   overflow: hidden;
-  background: var(--bg-soft);
+  background: #0A0A0A;
   border: 1px solid var(--ring);
-  box-shadow: 0 24px 60px -28px rgba(0,0,0,0.9), 0 0 0 1px rgba(245,158,11,0.04);
+  box-shadow: 0 1px 2px rgba(10,10,10,0.05), 0 18px 44px -22px rgba(10,10,10,0.28);
 }
 .reel-frame video {
   display: block;
@@ -295,9 +301,9 @@ body::before {
   gap: 6px;
   padding: 4px 10px;
   border-radius: 100px;
-  background: var(--amber-soft);
+  background: var(--amber-tint);
   border: 1px solid var(--amber-ring);
-  color: var(--amber);
+  color: var(--amber-ink);
 }
 
 /* The text column */
@@ -350,7 +356,7 @@ body::before {
   position: relative;
   margin: 0 0 26px;
   padding: 20px 24px;
-  background: var(--amber-soft);
+  background: var(--amber-tint);
   border-radius: var(--radius-sm);
   border: 1px solid var(--amber-ring);
 }
@@ -364,21 +370,21 @@ body::before {
 }
 .loi .loi-label {
   font-family: var(--heading);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--amber);
+  color: var(--amber-ink);
   display: block;
   margin-bottom: 7px;
   padding-left: 12px;
 }
 .loi p {
   font-family: var(--heading);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 17px;
   line-height: 1.4;
-  color: var(--text);
+  color: #1C1917;
   letter-spacing: -0.01em;
   padding-left: 12px;
 }
@@ -388,7 +394,7 @@ body::before {
 .appliquer li {
   position: relative;
   padding: 14px 16px 14px 46px;
-  background: var(--surface);
+  background: var(--bg-soft);
   border: 1px solid var(--ring-soft);
   border-radius: var(--radius-sm);
   font-size: 14.5px;
@@ -400,9 +406,9 @@ body::before {
   left: 14px; top: 13px;
   width: 22px; height: 22px;
   border-radius: 7px;
-  background: var(--amber-soft);
+  background: var(--amber-tint);
   border: 1px solid var(--amber-ring);
-  color: var(--amber);
+  color: var(--amber-ink);
   font-family: var(--heading);
   font-weight: 700;
   font-size: 12px;
@@ -429,7 +435,7 @@ body::before {
   gap: 12px;
 }
 .cheat-item {
-  background: var(--surface);
+  background: var(--bg-soft);
   border: 1px solid var(--ring-soft);
   border-radius: var(--radius-sm);
   padding: 15px 18px;
@@ -457,18 +463,19 @@ body::before {
   font-weight: 500;
   max-width: 60ch;
 }
-.bridge p strong { color: var(--amber); font-weight: 700; }
+.bridge p strong { color: var(--amber-ink); font-weight: 700; }
 
 /* ---- CTA ---- */
 .cta {
   margin: 36px 0 90px;
   padding: 48px 36px;
   background:
-    radial-gradient(ellipse 80% 120% at 50% -20%, rgba(245,158,11,0.13), transparent 60%),
-    var(--surface-2);
+    radial-gradient(ellipse 90% 130% at 50% -10%, rgba(245,158,11,0.10), transparent 62%),
+    var(--bg-soft);
   border: 1px solid var(--amber-ring);
   border-radius: 22px;
   text-align: center;
+  box-shadow: var(--shadow-md);
 }
 .cta h2 {
   font-family: var(--heading);
@@ -476,6 +483,7 @@ body::before {
   font-size: clamp(1.5rem, 4.5vw, 2.3rem);
   line-height: 1.15;
   letter-spacing: -0.03em;
+  color: var(--text);
   max-width: 22ch;
   margin: 0 auto 18px;
 }
@@ -486,25 +494,40 @@ body::before {
   max-width: 52ch;
   margin: 0 auto 30px;
 }
+/* Headline-less CTA: the body question becomes the prominent hook */
+.cta .cta-lead {
+  font-family: var(--heading);
+  font-weight: 700;
+  font-size: clamp(1.3rem, 3.6vw, 1.9rem);
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  max-width: 24ch;
+  margin: 0 auto 32px;
+}
 .cta-btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   font-family: var(--heading);
   font-weight: 700;
-  font-size: 16px;
-  letter-spacing: -0.01em;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  line-height: 1.25;
+  text-transform: uppercase;
   color: #0A0A0A;
   background: var(--amber);
-  padding: 16px 30px;
+  padding: 16px 28px;
   border-radius: 12px;
+  max-width: 100%;
   text-decoration: none;
   transition: transform 0.18s cubic-bezier(0.16,1,0.3,1), box-shadow 0.18s ease;
-  box-shadow: 0 10px 34px -10px rgba(245,158,11,0.55);
+  box-shadow: 0 8px 26px -10px rgba(245,158,11,0.6);
 }
-.cta-btn:hover { transform: translateY(-2px); box-shadow: 0 16px 44px -10px rgba(245,158,11,0.7); }
+.cta-btn:hover { transform: translateY(-2px); box-shadow: 0 14px 36px -10px rgba(245,158,11,0.72); }
 .cta-btn:active { transform: translateY(0); }
-.cta-btn svg { width: 17px; height: 17px; }
+.cta-btn svg { width: 17px; height: 17px; flex-shrink: 0; }
 
 /* ---- FOOTER ---- */
 .footer {
@@ -677,6 +700,17 @@ def render_page(data):
     cheat_html = render_cheatsheet(data["cheatsheet"])
     hero_title = split_hero_title(title)
 
+    # CTA: render the headline only when present. When the headline is empty,
+    # the body question becomes the prominent hook (larger + heavier).
+    cta_headline = (cta.get("headline") or "").strip()
+    if cta_headline:
+        cta_inner = (
+            f'<h2>{esc(cta_headline)}</h2>\n'
+            f'        <p>{esc(cta["body"])}</p>'
+        )
+    else:
+        cta_inner = f'<p class="cta-lead">{esc(cta["body"])}</p>'
+
     meta_desc = esc_attr(intro["promise"][:155])
 
     return f"""<!DOCTYPE html>
@@ -687,7 +721,7 @@ def render_page(data):
   <title>{esc(title)} — {esc(author)}</title>
   <meta name="description" content="{meta_desc}">
   <meta name="robots" content="noindex">
-  <meta name="theme-color" content="#0A0A0A">
+  <meta name="theme-color" content="#FFFFFF">
   <meta property="og:title" content="{esc_attr(title)}">
   <meta property="og:description" content="{meta_desc}">
   <meta property="og:type" content="article">
@@ -734,8 +768,7 @@ def render_page(data):
   <section class="cta-section">
     <div class="wrap">
       <div class="cta">
-        <h2>{esc(cta['headline'])}</h2>
-        <p>{esc(cta['body'])}</p>
+        {cta_inner}
         <a class="cta-btn" href="{esc_attr(cta_href)}" target="_blank" rel="noopener noreferrer">
           {esc(cta['button'])} {ICON_ARROW}
         </a>

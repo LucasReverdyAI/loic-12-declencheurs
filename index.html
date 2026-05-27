@@ -5,23 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
 <title>Les 12 Déclencheurs — 3 versions</title>
+<meta name="theme-color" content="#FFFFFF">
 <style>
-:root{--bg:#0A0A0A;--amber:#F59E0B;--txt:#F5F5F4;--muted:#A1A1AA;--ring:rgba(255,255,255,.08);--surface:rgba(255,255,255,.035)}
+:root{--bg:#FFFFFF;--bg-soft:#FAFAF9;--amber:#F59E0B;--amber-ink:#B45309;--txt:#18181B;--muted:#52525B;--ring:rgba(10,10,10,.10);--ring-soft:rgba(10,10,10,.07)}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px}
-.glow{position:fixed;inset:0;background:radial-gradient(60% 50% at 20% 90%,rgba(245,158,11,.10),transparent 60%);pointer-events:none}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px;-webkit-font-smoothing:antialiased}
+.glow{position:fixed;inset:0;background:radial-gradient(60% 50% at 20% 90%,rgba(245,158,11,.06),transparent 62%);pointer-events:none}
 .wrap{max-width:660px;width:100%;position:relative}
-.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);font-weight:600}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber-ink);font-weight:600}
 h1{font-size:clamp(28px,6vw,44px);line-height:1.05;margin:14px 0 10px;font-weight:700;letter-spacing:-.01em}
 h1 .a{color:var(--amber)}
 .sub{color:var(--muted);margin:0 0 30px;font-size:15px;line-height:1.6}
 .cards{display:grid;gap:14px}
-a.card{display:block;text-decoration:none;color:inherit;background:var(--surface);border:1px solid var(--ring);border-radius:14px;padding:20px 22px;transition:border-color .18s ease,transform .18s ease}
-a.card:hover{border-color:var(--amber);transform:translateY(-2px)}
+a.card{display:block;text-decoration:none;color:inherit;background:var(--bg-soft);border:1px solid var(--ring-soft);border-radius:14px;padding:20px 22px;transition:border-color .18s ease,transform .18s ease,box-shadow .18s ease;box-shadow:0 1px 2px rgba(10,10,10,.04)}
+a.card:hover{border-color:var(--amber);transform:translateY(-2px);box-shadow:0 10px 30px -12px rgba(10,10,10,.16)}
 .card .t{font-size:18px;font-weight:700}
 .card .d{color:var(--muted);font-size:14px;margin-top:5px;line-height:1.5}
-.card .go{color:var(--amber);font-size:13px;margin-top:12px;font-weight:600}
-.foot{color:#52525B;font-size:12px;margin-top:30px}
+.card .go{color:var(--amber-ink);font-size:13px;margin-top:12px;font-weight:600}
+.foot{color:#A1A1AA;font-size:12px;margin-top:30px}
 </style>
 </head>
 <body>
