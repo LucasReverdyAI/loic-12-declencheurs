@@ -468,15 +468,19 @@ body::before {
 /* ---- CTA ---- */
 .cta {
   margin: 36px 0 90px;
-  padding: 48px 36px;
+  padding: 40px 40px 42px;
   background:
     radial-gradient(ellipse 90% 130% at 50% -10%, rgba(245,158,11,0.10), transparent 62%),
     var(--bg-soft);
   border: 1px solid var(--amber-ring);
   border-radius: 22px;
-  text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
   box-shadow: var(--shadow-md);
 }
+.cta .eyebrow { margin-bottom: 16px; }
 .cta h2 {
   font-family: var(--heading);
   font-weight: 700;
@@ -485,25 +489,26 @@ body::before {
   letter-spacing: -0.03em;
   color: var(--text);
   max-width: 22ch;
-  margin: 0 auto 18px;
+  margin: 0 0 18px;
 }
 .cta p {
   font-size: 16px;
   line-height: 1.6;
   color: var(--text-dim);
   max-width: 52ch;
-  margin: 0 auto 30px;
+  margin: 0 0 30px;
 }
-/* Headline-less CTA: the body question becomes the prominent hook */
+/* Headline-less CTA: the body question reads as integrated supporting copy,
+   sized to the page body scale so the amber button stays the focal point. */
 .cta .cta-lead {
-  font-family: var(--heading);
-  font-weight: 700;
-  font-size: clamp(1.3rem, 3.6vw, 1.9rem);
-  line-height: 1.28;
-  letter-spacing: -0.02em;
+  font-family: var(--body);
+  font-weight: 500;
+  font-size: clamp(1.05rem, 1.4vw, 1.15rem);
+  line-height: 1.5;
+  letter-spacing: 0;
   color: var(--text);
-  max-width: 24ch;
-  margin: 0 auto 32px;
+  max-width: 46ch;
+  margin: 0 0 26px;
 }
 .cta-btn {
   display: inline-flex;
@@ -709,7 +714,10 @@ def render_page(data):
             f'        <p>{esc(cta["body"])}</p>'
         )
     else:
-        cta_inner = f'<p class="cta-lead">{esc(cta["body"])}</p>'
+        cta_inner = (
+            '<span class="eyebrow">Et maintenant ?</span>\n'
+            f'        <p class="cta-lead">{esc(cta["body"])}</p>'
+        )
 
     meta_desc = esc_attr(intro["promise"][:155])
 
