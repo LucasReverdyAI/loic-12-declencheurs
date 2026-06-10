@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Les 12 Déclencheurs — 3 versions</title>
+<meta name="theme-color" content="#FFFFFF">
+<style>
+:root{--bg:#FFFFFF;--bg-soft:#FAFAF9;--amber:#F59E0B;--amber-ink:#B45309;--txt:#18181B;--muted:#52525B;--ring:rgba(10,10,10,.10);--ring-soft:rgba(10,10,10,.07)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px;-webkit-font-smoothing:antialiased}
+.glow{position:fixed;inset:0;background:radial-gradient(60% 50% at 20% 90%,rgba(245,158,11,.06),transparent 62%);pointer-events:none}
+.wrap{max-width:660px;width:100%;position:relative}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber-ink);font-weight:600}
+h1{font-size:clamp(28px,6vw,44px);line-height:1.05;margin:14px 0 10px;font-weight:700;letter-spacing:-.01em}
+h1 .a{color:var(--amber)}
+.sub{color:var(--muted);margin:0 0 30px;font-size:15px;line-height:1.6}
+.cards{display:grid;gap:14px}
+a.card{display:block;text-decoration:none;color:inherit;background:var(--bg-soft);border:1px solid var(--ring-soft);border-radius:14px;padding:20px 22px;transition:border-color .18s ease,transform .18s ease,box-shadow .18s ease;box-shadow:0 1px 2px rgba(10,10,10,.04)}
+a.card:hover{border-color:var(--amber);transform:translateY(-2px);box-shadow:0 10px 30px -12px rgba(10,10,10,.16)}
+.card .t{font-size:18px;font-weight:700}
+.card .d{color:var(--muted);font-size:14px;margin-top:5px;line-height:1.5}
+.card .go{color:var(--amber-ink);font-size:13px;margin-top:12px;font-weight:600}
+.foot{color:#A1A1AA;font-size:12px;margin-top:30px}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<div class="wrap">
+  <span class="eyebrow">Choisis ta version · vidéos jouables inline</span>
+  <h1>Les 12 Déclencheurs<br>de <span class="a">Contenu Viral</span></h1>
+  <p class="sub">3 versions, même contenu, ton différent. Ouvre-les et compare.</p>
+  <div class="cards">
+    <a class="card" href="index.html">
+      <div class="t">Expert</div>
+      <div class="d">Mécanismes nommés (Zeigarnik, Cialdini, Tajfel) — autorité scientifique.</div>
+      <div class="go">Ouvrir →</div>
+    </a>
+    <a class="card" href="index-createur.html">
+      <div class="t">Créateur</div>
+      <div class="d">Mécanismes sans les noms de chercheurs — direct, créateur à créateur.</div>
+      <div class="go">Ouvrir →</div>
+    </a>
+    <a class="card" href="index-accessible.html">
+      <div class="t">Accessible</div>
+      <div class="d">Zéro jargon, expliqué en mots simples du quotidien.</div>
+      <div class="go">Ouvrir →</div>
+    </a>
+  </div>
+  <p class="foot">par Loïc Bourget</p>
+</div>
+</body>
+</html>
